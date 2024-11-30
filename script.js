@@ -19,9 +19,18 @@ function addRecommendation() {
 }
 
 function showPopup(bool) {
+  const popup = document.getElementById('popup');
+  const backdrop = document.querySelector('.popup-backdrop');
+
   if (bool) {
-    document.getElementById('popup').style.visibility = 'visible'
+    popup.style.visibility = 'visible';
+    popup.style.opacity = '1';
+    backdrop.style.visibility = 'visible';
+    backdrop.style.opacity = '1';
   } else {
-    document.getElementById('popup').style.visibility = 'hidden'
+    popup.style.visibility = 'hidden';
+    popup.style.opacity = '0';
+    backdrop.style.visibility = 'hidden';
+    backdrop.style.opacity = '0';
   }
 }
