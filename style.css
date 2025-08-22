@@ -172,49 +172,165 @@ nav {
 }
 
 /* Skills Section */
+
+/* ----- Skills Grid (Ampel) ----- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0,1fr));
+    gap: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    background: var(--surface);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    padding: .8rem .9rem;
+    box-shadow: 0 3px 6px rgba(0,0,0,.08);
+}
+
+    .skill-item img {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+        
+    }
+
+.skill-name {
+    font-weight: 600;
+    color: var(--text);
+}
+
+.skill-dot {
+    margin-left: auto;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(0,0,0,0.04) inset;
+}
+
+/* Ampel-Farben */
+:root {
+    --lvl-5: #2ecc71; /* grün */
+    --lvl-4: #a3d977; /* grün-gelb */
+    --lvl-3: #f1c40f; /* gelb */
+    --lvl-2: #cfc88a; /* grau-gelb */
+    --lvl-1: #b0b7c3; /* grau */
+}
+
+.skill-item[data-level="5"] .skill-dot {
+    background: var(--lvl-5);
+}
+
+.skill-item[data-level="4"] .skill-dot {
+    background: var(--lvl-4);
+}
+
+.skill-item[data-level="3"] .skill-dot {
+    background: var(--lvl-3);
+}
+
+.skill-item[data-level="2"] .skill-dot {
+    background: var(--lvl-2);
+}
+
+.skill-item[data-level="1"] .skill-dot {
+    background: var(--lvl-1);
+}
+
+/* Responsive: bei kleiner Breite weniger Spalten */
+@media (max-width: 1200px) {
+    .skills-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ----- Legende oberhalb des Skill-Grids ----- */
+.skills-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 0.75rem 1rem;
+    background: var(--surface);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+    justify-content: center;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .95rem;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(0,0,0,0.05) inset;
+}
+
+    /* Gleiche Farben wie beim Grid */
+    .legend-dot[data-level="5"] {
+        background: var(--lvl-5);
+    }
+
+    .legend-dot[data-level="4"] {
+        background: var(--lvl-4);
+    }
+
+    .legend-dot[data-level="3"] {
+        background: var(--lvl-3);
+    }
+
+    .legend-dot[data-level="2"] {
+        background: var(--lvl-2);
+    }
+
+    .legend-dot[data-level="1"] {
+        background: var(--lvl-1);
+    }
+
+
+/* Highlight wichtiger Skills */
+.highlight-skill {
+    background-color: color-mix(in srgb, var(--secondary) 15%, transparent);
+    border: 1px solid color-mix(in srgb, var(--secondary) 30%, transparent);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .highlight-skill:hover {
+        background-color: color-mix(in srgb, var(--primary) 15%, transparent);
+        border: 1px solid color-mix(in srgb, var(--primary) 30%, transparent);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
 #skills {
     text-align: center;
 }
 
-.all_skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-}
 
-.skill {
-    background: var(--surface);
-    border: 1px solid var(--accent);
-    border-radius: 8px;
-    text-align: center;
-    padding: 1rem;
-    width: 200px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-    .skill:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-        background-color: #f7fafc;
-    }
-
-    .skill img {
-        width: 50px;
-        margin-bottom: 10px;
-    }
-
-    .skill h6 {
-        font-size: 1.2rem;
-        margin-bottom: 0.5rem;
-        color: var(--primary);
-    }
-
-    .skill p {
-        font-size: 0.9rem;
-        color: var(--muted);
-    }
 
 /* Projects Section */
 .projects-container {
