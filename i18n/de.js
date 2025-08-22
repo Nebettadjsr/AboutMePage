@@ -1,4 +1,4 @@
-// i18n/de.js
+ï»¿// i18n/de.js
 window.I18N = window.I18N || {};
 window.I18N.de = {
   "meta.title": "Bianca Krause - Portfolio",
@@ -10,15 +10,15 @@ window.I18N.de = {
   "contact.email": "bianca-krause@aikq.de",
   "contact.phone": "+ 49 17662385445",
 
-  "nav.about": "Über mich",
-  "nav.skills": "Fähigkeiten",
+  "nav.about": "Ãœber mich",
+  "nav.skills": "FÃ¤higkeiten",
   "nav.projects": "Projekte",
   "nav.recommendations": "Empfehlungen",
 
   "about.title": "Hi, ich bin Bianca!",
-  "about.text": "Derzeit arbeite ich als T1 Support Specialist für eines der größten sozialen Netzwerke und löse Nutzerprobleme effizient im First-Level-Support. Zusätzlich betreibe ich meinen eigenen Online-Shop, Holzallerliebst.Shop, in dem ich einzigartige Holzdekorationen und Geschenke verkaufe. Dabei habe ich meine Kenntnisse in Webdesign und Programmierung genutzt, um Herausforderungen in meinem Business zu meistern — von der Websiteverwaltung bis zur Verbesserung der Nutzererfahrung.",
+  "about.text": "Derzeit arbeite ich als T1 Support Specialist fÃ¼r eines der grÃ¶ÃŸten sozialen Netzwerke und lÃ¶se Nutzerprobleme effizient im First-Level-Support. ZusÃ¤tzlich betreibe ich meinen eigenen Online-Shop, Holzallerliebst.Shop, in dem ich einzigartige Holzdekorationen und Geschenke verkaufe. Dabei habe ich meine Kenntnisse in Webdesign und Programmierung genutzt, um Herausforderungen in meinem Business zu meistern â€” von der Websiteverwaltung bis zur Verbesserung der Nutzererfahrung.",
 
-  "skills.title": "Fähigkeiten",
+  "skills.title": "FÃ¤higkeiten",
 
   "skills.html.title": "HTML",
   "skills.html.years": "4 Jahre Erfahrung",
@@ -38,29 +38,29 @@ window.I18N.de = {
   "projects.title": "Projekte",
 
   "projects.holz.title": "Holzallerliebst.Shop",
-  "projects.holz.desc": "Design und Individualisierung eines Shopify-Shops, Holzallerliebst.Shop, der sich auf einzigartige Holzdekorationen und Geschenke spezialisiert. Anpassung des Shopify-Liquid-Templates an den Markenstil, vollständige Integration in das Meta-Ökosystem mit Facebook Pixel und Anbindung an Instagram und Facebook für optimierte Social-Media-Präsenz.",
+  "projects.holz.desc": "Design und Individualisierung eines Shopify-Shops, Holzallerliebst.Shop, der sich auf einzigartige Holzdekorationen und Geschenke spezialisiert. Anpassung des Shopify-Liquid-Templates an den Markenstil, vollstÃ¤ndige Integration in das Meta-Ã–kosystem mit Facebook Pixel und Anbindung an Instagram und Facebook fÃ¼r optimierte Social-Media-PrÃ¤senz.",
 
   "projects.etsy.title": "Etsy Tag Helper",
-  "projects.etsy.desc": "Entwicklung eines Python-basierten Tools, Etsy Tag Helper, in nur drei Tagen mit Unterstützung von ChatGPT — ohne vorherige Python-Erfahrung. Das Tool optimiert Etsy-Tags effizient, indem es Keyword-Effektivität, Zeichenlimits und Wiederholungen ausbalanciert. Bereits 15 Mal auf Etsy verkauft; ursprünglich entwickelt, um mein eigenes Tag-Management zu vereinfachen.",
+  "projects.etsy.desc": "Entwicklung eines Python-basierten Tools, Etsy Tag Helper, in nur drei Tagen mit UnterstÃ¼tzung von ChatGPT â€” ohne vorherige Python-Erfahrung. Das Tool optimiert Etsy-Tags effizient, indem es Keyword-EffektivitÃ¤t, Zeichenlimits und Wiederholungen ausbalanciert. Bereits 15 Mal auf Etsy verkauft; ursprÃ¼nglich entwickelt, um mein eigenes Tag-Management zu vereinfachen.",
 
   "projects.ai.title": "KI-Content-Erstellung",
-  "projects.ai.desc": "Einsatz von KI-Tools wie ChatGPT und Midjourney zur Erstellung von 92 Buchseiten (46.190 Wörter) und mehreren Stockbildern. Die Bilder sind inzwischen auf AdobeStock verfügbar. Aktuell recherchiere ich moderne KI-Videotechnologien, um die Content-Erstellung weiter auszubauen.",
+  "projects.ai.desc": "Einsatz von KI-Tools wie ChatGPT und Midjourney zur Erstellung von 92 Buchseiten (46.190 WÃ¶rter) und mehreren Stockbildern. Die Bilder sind inzwischen auf AdobeStock verfÃ¼gbar. Aktuell recherchiere ich moderne KI-Videotechnologien, um die Content-Erstellung weiter auszubauen.",
 
   "recs.title": "Empfehlungen",
 
-  "recs.r1": "Die Zusammenarbeit mit Bianca war inspirierend. Ob HTML oder Shopify Liquid — Bianca beherrscht es, komplexe Webprobleme einfach wirken zu lassen. Ihre Problemlösungsfähigkeiten und der effiziente Einsatz von ChatGPT sind unübertroffen — genau die Art von Entwicklerin, die man im Team haben möchte.",
+  "recs.r1": "Die Zusammenarbeit mit Bianca war inspirierend. Ob HTML oder Shopify Liquid â€” Bianca beherrscht es, komplexe Webprobleme einfach wirken zu lassen. Ihre ProblemlÃ¶sungsfÃ¤higkeiten und der effiziente Einsatz von ChatGPT sind unÃ¼bertroffen â€” genau die Art von Entwicklerin, die man im Team haben mÃ¶chte.",
   "recs.r2": "Bianca ist unglaublich talentiert in der Webentwicklung. Sie hat das Nutzererlebnis auf Holzallerliebst.Shop mit nahtlosen Anpassungen neu definiert und den Markenstil perfekt widergespiegelt. Ihre JavaScript- und CSS-Kenntnisse bringen das gewisse Extra, das aus normalen Seiten beeindruckende Designs macht.",
-  "recs.r3": "Ich habe mit Bianca an einem Shopify-Projekt zusammengearbeitet. Ihr Wissen über Liquid und CSS war genau das, was wir brauchten. Sie löste jedes Designproblem und integrierte den Shop perfekt in das Meta-Ökosystem — inklusive Facebook und Instagram! Bianca ist eine absolute Profi-Entwicklerin, und ich empfehle sie wärmstens.",
-  "recs.r4": "Mit einer neugierigen Denkweise und grenzenloser Kreativität entwickelte Bianca in Rekordzeit einen leistungsstarken Etsy Tag Helper, der intuitiv und effektiv ist. Ihre ChatGPT-Kenntnisse sparten enorm viel Zeit und steigerten die Produktivität. Ich bin überzeugt, sie könnte Python sogar einem Stein beibringen.",
-  "recs.r5": "Bianca hat ein einzigartiges Talent, Technik mit Kreativität zu verbinden. Sie hat KI-Content-Erstellung zu einer Kunstform gemacht und beeindruckende Stockbilder mit Midjourney für AdobeStock erstellt. Ihre Eigeninitiative und Leidenschaft spiegeln sich in jedem Projekt wider.",
-  "recs.r6": "Ich habe beobachtet, wie Bianca unglaubliche Detailtreue in Projekte einbringt — von Shopify-Stores bis hin zu JavaScript-Funktionen. Ihre 4+ Jahre HTML- und CSS-Erfahrung zeigen sich in der Präzision ihrer Arbeit. Sie hat sogar einen perfekten Buchentwurf mit ChatGPT erstellt — wahre Innovation!",
+  "recs.r3": "Ich habe mit Bianca an einem Shopify-Projekt zusammengearbeitet. Ihr Wissen Ã¼ber Liquid und CSS war genau das, was wir brauchten. Sie lÃ¶ste jedes Designproblem und integrierte den Shop perfekt in das Meta-Ã–kosystem â€” inklusive Facebook und Instagram! Bianca ist eine absolute Profi-Entwicklerin, und ich empfehle sie wÃ¤rmstens.",
+  "recs.r4": "Mit einer neugierigen Denkweise und grenzenloser KreativitÃ¤t entwickelte Bianca in Rekordzeit einen leistungsstarken Etsy Tag Helper, der intuitiv und effektiv ist. Ihre ChatGPT-Kenntnisse sparten enorm viel Zeit und steigerten die ProduktivitÃ¤t. Ich bin Ã¼berzeugt, sie kÃ¶nnte Python sogar einem Stein beibringen.",
+  "recs.r5": "Bianca hat ein einzigartiges Talent, Technik mit KreativitÃ¤t zu verbinden. Sie hat KI-Content-Erstellung zu einer Kunstform gemacht und beeindruckende Stockbilder mit Midjourney fÃ¼r AdobeStock erstellt. Ihre Eigeninitiative und Leidenschaft spiegeln sich in jedem Projekt wider.",
+  "recs.r6": "Ich habe beobachtet, wie Bianca unglaubliche Detailtreue in Projekte einbringt â€” von Shopify-Stores bis hin zu JavaScript-Funktionen. Ihre 4+ Jahre HTML- und CSS-Erfahrung zeigen sich in der PrÃ¤zision ihrer Arbeit. Sie hat sogar einen perfekten Buchentwurf mit ChatGPT erstellt â€” wahre Innovation!",
 
   "form.legend": "Empfehlung hinterlassen",
   "form.namePh": "Name (optional)",
   "form.msgPh": "Nachricht",
   "form.submit": "Absenden",
 
-  "popup.line1": "Vielen Dank, dass du eine Empfehlung für Bianca hinterlassen hast.",
+  "popup.line1": "Vielen Dank, dass du eine Empfehlung fÃ¼r Bianca hinterlassen hast.",
   "popup.line2": "Bitte schreibe nur nette Dinge!",
   "popup.ok": "Ok"
 };

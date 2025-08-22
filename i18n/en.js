@@ -1,4 +1,4 @@
-// i18n/en.js
+ï»¿// i18n/en.js
 window.I18N = window.I18N || {};
 window.I18N.en = {
   "meta.title": "Bianca Krause - Portfolio",
@@ -31,12 +31,12 @@ window.I18N.en = {
   "projects.ai.title": "AI Content Creation",
   "projects.ai.desc": "Utilized AI tools, including ChatGPT and Midjourney, to produce 92 pages (46,190 words) of an upcoming book and multiple stock images. The images are now available for sale on AdobeStock. Currently researching advanced AI video software to further expand content creation capabilities.",
   "recs.title": "Recommendations",
-  "recs.r1": "Working with Bianca has been an inspiring experience. Whether it's HTML or Shopify Liquid, Bianca has a true knack for making complex web problems look simple. Their problem-solving skills and efficiency with ChatGPT are unmatched—they're the kind of developer you absolutely want on your team.",
+  "recs.r1": "Working with Bianca has been an inspiring experience. Whether it's HTML or Shopify Liquid, Bianca has a true knack for making complex web problems look simple. Their problem-solving skills and efficiency with ChatGPT are unmatchedâ€”they're the kind of developer you absolutely want on your team.",
   "recs.r2": "Bianca is incredibly talented in web development. They redefined the experience on Holzallerliebst.Shop with seamless customizations that reflected the brand perfectly. Their mastery of JavaScript and CSS adds the magic that turns ordinary pages into impressive designs.",
-  "recs.r3": "I collaborated with Bianca on a Shopify project, and their expertise in Liquid and CSS was exactly what we needed. Not only did they solve every design challenge, but they also integrated the store with Meta’s entire ecosystem—Facebook and Instagram! Bianca is the ultimate pro, and I’m thrilled to recommend them.",
-  "recs.r4": "With a curious mind and endless creativity, Bianca not only developed a powerful Etsy Tag Helper in record time but also made it intuitive and effective. Their ChatGPT skills saved time and maximized productivity. I’m convinced they could teach Python to a rock.",
+  "recs.r3": "I collaborated with Bianca on a Shopify project, and their expertise in Liquid and CSS was exactly what we needed. Not only did they solve every design challenge, but they also integrated the store with Metaâ€™s entire ecosystemâ€”Facebook and Instagram! Bianca is the ultimate pro, and Iâ€™m thrilled to recommend them.",
+  "recs.r4": "With a curious mind and endless creativity, Bianca not only developed a powerful Etsy Tag Helper in record time but also made it intuitive and effective. Their ChatGPT skills saved time and maximized productivity. Iâ€™m convinced they could teach Python to a rock.",
   "recs.r5": "Bianca has a unique gift for blending tech with creativity. They turned AI content creation into an art form and developed engaging stock images with Midjourney for AdobeStock. Their initiative and passion shine in every project they touch!",
-  "recs.r6": "I’ve watched Bianca bring incredible detail to life in everything from Shopify stores to JavaScript features. Their 4+ years of HTML and CSS experience show in the precision of their work. They even created a perfectly designed book draft using ChatGPT—true innovation!",
+  "recs.r6": "Iâ€™ve watched Bianca bring incredible detail to life in everything from Shopify stores to JavaScript features. Their 4+ years of HTML and CSS experience show in the precision of their work. They even created a perfectly designed book draft using ChatGPTâ€”true innovation!",
   "form.legend": "Leave a Recommendation",
   "form.namePh": "Name (Optional)",
   "form.msgPh": "Message",
