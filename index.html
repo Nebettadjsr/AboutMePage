@@ -32,6 +32,7 @@
                 <a class="topmenu" href="#about-me" data-i18n="nav.about"></a>
                 <a class="topmenu" href="#skills" data-i18n="nav.skills"></a>
                 <a class="topmenu" href="#projects" data-i18n="nav.projects"></a>
+                <a class="topmenu" href="#certificates" data-i18n="certs.title"></a>
                 <a class="topmenu" href="#recommendations" data-i18n="nav.recommendations"></a>
                 <button id="lang-toggle" aria-pressed="false" class="topmenu" data-i18n="ui.langToggle"></button>
             </div>
@@ -40,13 +41,22 @@
 
     <div id="shrink-sentinel" aria-hidden="true"></div>
 
+    <!-- About this Page -->
+    <section class="about-project">
+        <details>
+          <summary data-i18n="disclaimer.summary"></summary>
+          <p data-i18n="disclaimer.text1"></p>
+          <p data-i18n="disclaimer.text2"></p>          
+        </details>
+      </section>
+
     <!-- About Me -->
     <section id="about-me" class="container">
         <div>
             <img src="img/anlauf-033.png" class="profile_image" />
         </div>
 
-        <div>
+        <div class="about-me-text" >
             <h1>
                 <span data-i18n="about.title"></span>
                 <img src="img/hello.png" width="60px" class="primary-icon" />
@@ -63,189 +73,554 @@
         <div class="skills-legend">
             <div class="legend-item">
                 <span class="legend-dot" data-level="5"></span>
-                <span>Langjährige Erfahrung</span>
+                <span data-i18n="skills.legend.level5"></span>
             </div>
             <div class="legend-item">
                 <span class="legend-dot" data-level="4"></span>
-                <span>Ausgiebige Erfahrung</span>
+                <span data-i18n="skills.legend.level4"></span>
             </div>
             <div class="legend-item">
                 <span class="legend-dot" data-level="3"></span>
-                <span>Gutes Verständnis</span>
+                <span data-i18n="skills.legend.level3"></span>
             </div>
             <div class="legend-item">
                 <span class="legend-dot" data-level="2"></span>
-                <span>Erste Erfahrungen</span>
+                <span data-i18n="skills.legend.level2"></span>
             </div>
             <div class="legend-item">
                 <span class="legend-dot" data-level="1"></span>
-                <span>Einstieg / Grundlagen</span>
+                <span data-i18n="skills.legend.level1"></span>
             </div>
         </div>
 
         <div class="skills-grid">
 
-            <!-- 5: sehr stark -->
-            <div class="skill-item highlight-skill" data-level="5">
-                <img src="img/Team.png" alt="Teamwork" class="primary-icon" />
-                <span class="skill-name">Teamwork</span>
-                <span class="skill-dot" aria-label="Level 5"></span>
+            <!-- 5 -->
+            <div class="skill-item highlight-skill" data-level="5" data-i18n-attr="title:skills.tip.teamwork">
+              <img src="img/Team.png" alt="Teamwork" class="primary-icon" />
+              <span class="skill-name">Teamwork</span>
+              <span class="skill-dot" aria-label="Level 5"></span>
             </div>
-            <div class="skill-item highlight-skill" data-level="5">
-                <img src="img/commun.png" alt="Kommunikation" class="primary-icon" />
-                <span class="skill-name">Kommunikation</span>
-                <span class="skill-dot" aria-label="Level 5"></span>
+            <div class="skill-item highlight-skill" data-level="5" data-i18n-attr="title:skills.tip.communication">
+              <img src="img/commun.png" alt="Kommunikation" class="primary-icon" />
+              <span class="skill-name">Kommunikation</span>
+              <span class="skill-dot" aria-label="Level 5"></span>
             </div>
-
-            <!-- 4: fortgeschritten -->
-            <div class="skill-item highlight-skill" data-level="4">
-                <img src="img/html.png" alt="HTML" />
-                <span class="skill-name">HTML</span>
-                <span class="skill-dot" aria-label="Level 4"></span>
+          
+            <!-- 4 -->
+            <div class="skill-item highlight-skill" data-level="4" data-i18n-attr="title:skills.tip.html">
+              <img src="img/html.png" alt="HTML" />
+              <span class="skill-name">HTML</span>
+              <span class="skill-dot" aria-label="Level 4"></span>
             </div>
-            <div class="skill-item" data-level="4">
-                <img src="img/adobe-photoshop-icon.png" alt="Adobe Photoshop" />
-                <span class="skill-name">Adobe Photoshop</span>
-                <span class="skill-dot" aria-label="Level 4"></span>
+            <div class="skill-item" data-level="4" data-i18n-attr="title:skills.tip.photoshop">
+              <img src="img/adobe-photoshop-icon.png" alt="Adobe Photoshop" />
+              <span class="skill-name">Adobe Photoshop</span>
+              <span class="skill-dot" aria-label="Level 4"></span>
             </div>
-            <div class="skill-item" data-level="4">
-                <img src="img/e-comm.png" alt="E-Commerce" class="primary-icon" />
-                <span class="skill-name">E-Commerce</span>
-                <span class="skill-dot" aria-label="Level 4"></span>
+            <div class="skill-item" data-level="4" data-i18n-attr="title:skills.tip.ecommerce">
+              <img src="img/e-comm.png" alt="E-Commerce" class="primary-icon" />
+              <span class="skill-name">E-Commerce</span>
+              <span class="skill-dot" aria-label="Level 4"></span>
             </div>
-            <div class="skill-item" data-level="4">
-                <img src="img/billbee.png" alt="Warenwirtschaftssystem" />
-                <span class="skill-name">WaWi</span>
-                <span class="skill-dot" aria-label="Level 4"></span>
+            <div class="skill-item" data-level="4" data-i18n-attr="title:skills.tip.wawi">
+              <img src="img/billbee.png" alt="Warenwirtschaftssystem" />
+              <span class="skill-name">WaWi</span>
+              <span class="skill-dot" aria-label="Level 4"></span>
             </div>
-            <div class="skill-item highlight-skill" data-level="4">
-                <img src="https://img.icons8.com/ios7/600/chatgpt.png" alt="Artificial Intelligence" />
-                <span class="skill-name">Artificial Intelligence</span>
-                <span class="skill-dot" aria-label="Level 4"></span>
+            <div class="skill-item highlight-skill" data-level="4" data-i18n-attr="title:skills.tip.ai">
+              <img src="https://img.icons8.com/ios7/600/chatgpt.png" alt="Artificial Intelligence" />
+              <span class="skill-name">Artificial Intelligence</span>
+              <span class="skill-dot" aria-label="Level 4"></span>
             </div>
-
-            <!-- 3: solide Nutzungserfahrung -->
-            <div class="skill-item highlight-skill" data-level="3">
-                <img src="img/css.png" alt="CSS" />
-                <span class="skill-name">CSS</span>
-                <span class="skill-dot" aria-label="Level 3"></span>
+          
+            <!-- 3 -->
+            <div class="skill-item highlight-skill" data-level="3" data-i18n-attr="title:skills.tip.css">
+              <img src="img/css.png" alt="CSS" />
+              <span class="skill-name">CSS</span>
+              <span class="skill-dot" aria-label="Level 3"></span>
             </div>
-            <div class="skill-item highlight-skill" data-level="3">
-                <img src="img/js.png" alt="JavaScript" />
-                <span class="skill-name">JavaScript</span>
-                <span class="skill-dot" aria-label="Level 3"></span>
+            <div class="skill-item highlight-skill" data-level="3" data-i18n-attr="title:skills.tip.js">
+              <img src="img/js.png" alt="JavaScript" />
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-dot" aria-label="Level 3"></span>
             </div>
-            <div class="skill-item" data-level="3">
-                <img src="img/shopify.png" alt="Shopify / Liquid" />
-                <span class="skill-name">Shopify / Liquid</span>
-                <span class="skill-dot" aria-label="Level 3"></span>
+            <div class="skill-item" data-level="3" data-i18n-attr="title:skills.tip.shopify">
+              <img src="img/shopify.png" alt="Shopify / Liquid" />
+              <span class="skill-name">Shopify / Liquid</span>
+              <span class="skill-dot" aria-label="Level 3"></span>
             </div>
-            <div class="skill-item" data-level="3">
-                <img src="img/DaVinci_Resolve.png" alt="DaVinci Resolve" />
-                <span class="skill-name">DaVinci Resolve</span>
-                <span class="skill-dot" aria-label="Level 3"></span>
+            <div class="skill-item" data-level="3" data-i18n-attr="title:skills.tip.davinci">
+              <img src="img/DaVinci_Resolve.png" alt="DaVinci Resolve" />
+              <span class="skill-name">DaVinci Resolve</span>
+              <span class="skill-dot" aria-label="Level 3"></span>
             </div>
-            <div class="skill-item" data-level="3">
-                <img src="img/Microsoft_Office.png" alt="MS Office / 365" />
-                <span class="skill-name">MS Office / 365</span>
-                <span class="skill-dot" aria-label="Level 3"></span>
+            <div class="skill-item" data-level="3" data-i18n-attr="title:skills.tip.office">
+              <img src="img/Microsoft_Office.png" alt="MS Office / 365" />
+              <span class="skill-name">MS Office / 365</span>
+              <span class="skill-dot" aria-label="Level 3"></span>
             </div>
-            <div class="skill-item" data-level="3">
-                <img src="img/microsoft-word-icon.png" alt="MS Word" />
-                <span class="skill-name">MS Word</span>
-                <span class="skill-dot" aria-label="Level 3"></span>
+            <div class="skill-item" data-level="3" data-i18n-attr="title:skills.tip.word">
+              <img src="img/microsoft-word-icon.png" alt="MS Word" />
+              <span class="skill-name">MS Word</span>
+              <span class="skill-dot" aria-label="Level 3"></span>
             </div>
-            <div class="skill-item" data-level="3">
-                <img src="img/microsoft-excel-icon.png" alt="MS Excel" />
-                <span class="skill-name">MS Excel</span>
-                <span class="skill-dot" aria-label="Level 3"></span>
+            <div class="skill-item" data-level="3" data-i18n-attr="title:skills.tip.excel">
+              <img src="img/microsoft-excel-icon.png" alt="MS Excel" />
+              <span class="skill-name">MS Excel</span>
+              <span class="skill-dot" aria-label="Level 3"></span>
             </div>
-
-            <!-- 2: Grundlagen -->
-            <div class="skill-item highlight-skill" data-level="2">
-                <img src="img/python-programming-language-icon.png" alt="Python" />
-                <span class="skill-name">Python</span>
-                <span class="skill-dot" aria-label="Level 2"></span>
+          
+            <!-- 2 -->
+            <div class="skill-item highlight-skill" data-level="2" data-i18n-attr="title:skills.tip.python">
+              <img src="img/python-programming-language-icon.png" alt="Python" />
+              <span class="skill-name">Python</span>
+              <span class="skill-dot" aria-label="Level 2"></span>
             </div>
-            <div class="skill-item highlight-skill" data-level="2">
-                <img src="img/sql.png" alt="SQL" />
-                <span class="skill-name">SQL</span>
-                <span class="skill-dot" aria-label="Level 2"></span>
+            <div class="skill-item highlight-skill" data-level="2" data-i18n-attr="title:skills.tip.sql">
+              <img src="img/sql.png" alt="SQL" />
+              <span class="skill-name">SQL</span>
+              <span class="skill-dot" aria-label="Level 2"></span>
             </div>
-            <div class="skill-item highlight-skill" data-level="2">
-                <img src="img/typescript-programming-language-icon.png" alt="TypeScript" />
-                <span class="skill-name">TypeScript</span>
-                <span class="skill-dot" aria-label="Level 2"></span>
+            <div class="skill-item highlight-skill" data-level="2" data-i18n-attr="title:skills.tip.ts">
+              <img src="img/typescript-programming-language-icon.png" alt="TypeScript" />
+              <span class="skill-name">TypeScript</span>
+              <span class="skill-dot" aria-label="Level 2"></span>
             </div>
-            <div class="skill-item highlight-skill" data-level="2">
-                <img src="img/react-js-icon.png" alt="React (JS)" />
-                <span class="skill-name">React (JS)</span>
-                <span class="skill-dot" aria-label="Level 2"></span>
+            <div class="skill-item highlight-skill" data-level="2" data-i18n-attr="title:skills.tip.react">
+              <img src="img/react-js-icon.png" alt="React (JS)" />
+              <span class="skill-name">React (JS)</span>
+              <span class="skill-dot" aria-label="Level 2"></span>
             </div>
-            <div class="skill-item highlight-skill" data-level="2">
-                <img src="img/visual-studio-code-icon.png" alt="VS Code" />
-                <span class="skill-name">VS Code <br /> VS Studio Code </span>
-                <span class="skill-dot" aria-label="Level 2"></span>
+            <div class="skill-item highlight-skill" data-level="2" data-i18n-attr="title:skills.tip.vscode">
+              <img src="img/visual-studio-code-icon.png" alt="VS Code" />
+              <span class="skill-name">VS Code</span>
+              <span class="skill-dot" aria-label="Level 2"></span>
             </div>
-            <div class="skill-item" data-level="2">
-                <img src="img/google-ads-icon.png" alt="Google Ads" />
-                <span class="skill-name">Google Ads</span>
-                <span class="skill-dot" aria-label="Level 2"></span>
+            <div class="skill-item" data-level="2" data-i18n-attr="title:skills.tip.ads">
+              <img src="img/google-ads-icon.png" alt="Google Ads" />
+              <span class="skill-name">Google Ads</span>
+              <span class="skill-dot" aria-label="Level 2"></span>
             </div>
-            <div class="skill-item" data-level="2">
-                <img src="img/google-analytics-icon.png" alt="Google Analytics" />
-                <span class="skill-name">Google Analytics</span>
-                <span class="skill-dot" aria-label="Level 2"></span>
+            <div class="skill-item" data-level="2" data-i18n-attr="title:skills.tip.analytics">
+              <img src="img/google-analytics-icon.png" alt="Google Analytics" />
+              <span class="skill-name">Google Analytics</span>
+              <span class="skill-dot" aria-label="Level 2"></span>
             </div>
-            <div class="skill-item highlight-skill" data-level="2">
-                <img src="img/json-file-icon.png" alt="JSON" class="primary-icon" />
-                <span class="skill-name">JSON</span>
-                <span class="skill-dot" aria-label="Level 2"></span>
+            <div class="skill-item highlight-skill" data-level="2" data-i18n-attr="title:skills.tip.json">
+              <img src="img/json-file-icon.png" alt="JSON" class="primary-icon" />
+              <span class="skill-name">JSON</span>
+              <span class="skill-dot" aria-label="Level 2"></span>
             </div>
-
-            <!-- 1: Einstieg -->
-            <div class="skill-item highlight-skill" data-level="1">
-                <img src="img/Logo_C_sharp.png" alt="C#" />
-                <span class="skill-name">C#</span>
+          
+            <!-- 1 -->
+            <div class="skill-item highlight-skill" data-level="1" data-i18n-attr="title:skills.tip.csharp">
+              <img src="img/Logo_C_sharp.png" alt="C#" />
+              <span class="skill-name">C#</span>
+              <span class="skill-dot" aria-label="Level 1"></span>
+            </div>
+            <div class="skill-item highlight-skill" data-level="1" data-i18n-attr="title:skills.tip.ml">
+              <img src="img/artificial-intelligence-ai-icon.png" class="primary-icon" alt="Machine Learning" />
+              <span class="skill-name">Machine Learning</span>
+              <span class="skill-dot" aria-label="Level 1"></span>
+            </div>
+            <div class="skill-item highlight-skill" data-level="1" data-i18n-attr="title:skills.tip.block">
+                <img src="img/bitblock.png" class="primary-icon" alt="Block Chain & Crypto" />
+                <span class="skill-name">Block Chain & Crypto</span>
                 <span class="skill-dot" aria-label="Level 1"></span>
-            </div>
-            <div class="skill-item highlight-skill" data-level="1">
-                <img src="img/artificial-intelligence-ai-icon.png" class="primary-icon" alt="Machine Learning" />
-                <span class="skill-name">Machine Learning</span>
-                <span class="skill-dot" aria-label="Level 1"></span>
-            </div>
-        </div>
+              </div>
+          </div>
+    </section> 
 
 
 
     <!-- Projects -->
     <section class="projects" id="projects">
         <h2 data-i18n="projects.title"></h2>
-        <div class="projects-container">
-            <div class="project-card">
+      
+        <ul class="projects-list">
+          <!-- Holzallerliebst -->
+          <li class="project">
+            <figure class="project-media">
+              <img src="img/Deko.jpg"
+                   alt="Screenshot Holzallerliebst.Shop"
+                   width="480" height="270"
+                   loading="lazy">
+            </figure>
+      
+            <article class="project-body">
+              <header class="project-header">
                 <h3 data-i18n="projects.holz.title"></h3>
-                <ul>
-                    <li data-i18n="projects.holz.desc"></li>
-                </ul>
-            </div>
-
-            <div class="project-card">
+                <span class="project-time" data-i18n="projects.holz.time"></span>
+              </header>
+      
+              <p class="project-desc" data-i18n="projects.holz.desc"></p>
+      
+              <div class="project-meta">
+                      
+                <div class="project-tech">
+                  <strong data-i18n="projects.labels.tech"></strong>
+                  <ul class="tech-badges">
+                    <li data-i18n="projects.holz.tech.0"></li>
+                    <li data-i18n="projects.holz.tech.1"></li>
+                    <li data-i18n="projects.holz.tech.2"></li>
+                    <li data-i18n="projects.holz.tech.3"></li>
+                    <li data-i18n="projects.holz.tech.4"></li>
+                    <li data-i18n="projects.holz.tech.5"></li>
+                    <li data-i18n="projects.holz.tech.6"></li>
+                    <li data-i18n="projects.holz.tech.7"></li>
+                    <li data-i18n="projects.holz.tech.8"></li>
+                    <li data-i18n="projects.holz.tech.9"></li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </li>
+      
+        <!-- Etsy Tag Helper -->
+        <li class="project">
+            <figure class="project-media">
+            <img src="img/TagHelper.jpg"
+                alt="Screenshot Etsy Tag Helper"
+                width="480" height="270"
+                loading="lazy">
+            </figure>
+        
+            <article class="project-body">
+            <header class="project-header">
                 <h3 data-i18n="projects.etsy.title"></h3>
-                <ul>
-                    <li data-i18n="projects.etsy.desc"></li>
+                <span class="project-time" data-i18n="projects.etsy.time"></span>
+            </header>
+        
+            <p class="project-desc" data-i18n="projects.etsy.desc"></p>
+        
+            <div class="project-meta">
+                <div class="project-tech">
+                <strong data-i18n="projects.labels.tech"></strong>
+                <ul class="tech-badges">
+                    <li data-i18n="projects.etsy.tech.0"></li>
+                    <li data-i18n="projects.etsy.tech.1"></li>
+                    <li data-i18n="projects.etsy.tech.2"></li>
                 </ul>
+                </div>
             </div>
+            </article>
+        </li>
+  
+      
+        <!-- Kita Foto App -->
+        <li class="project">
+            <figure class="project-media">
+            <img src="img/KitaFotoApp.jpg"
+                alt="Screenshot Kita Foto App"
+                width="480" height="270"
+                loading="lazy">
+            </figure>
+        
+            <article class="project-body">
+            <header class="project-header">
+                <h3 data-i18n="projects.kita.title"></h3>
+                <span class="project-time" data-i18n="projects.kita.time"></span>
+            </header>
+        
+            <p class="project-desc" data-i18n="projects.kita.desc"></p>
+        
+            <div class="project-meta">
+                <div class="project-tech">
+                <strong data-i18n="projects.labels.tech"></strong>
+                <ul class="tech-badges">
+                    <li data-i18n="projects.kita.tech.0"></li>
+                    <li data-i18n="projects.kita.tech.1"></li>
+                    <li data-i18n="projects.kita.tech.2"></li>
+                    <li data-i18n="projects.kita.tech.3"></li>
+                    <li data-i18n="projects.kita.tech.4"></li>
+                </ul>
+                </div>
+        
+                <p class="cert-link">
+                <a href="https://github.com/Nebettadjsr/Free-Daycare-Photo-Gallery" target="_blank"
+                    data-i18n="projects.kita.github"></a>
+                </p>
+            </div>
+            </article>
+        </li>
 
-            <div class="project-card">
-                <h3 data-i18n="projects.ai.title"></h3>
-                <ul>
-                    <li data-i18n="projects.ai.desc"></li>
+        <!-- EasyTagsy AI -->
+        <li class="project">
+            <figure class="project-media">
+            <img src="img/EasyTagsyAI.jpg"
+                alt="Screenshot EasyTagsy AI"
+                width="480" height="270"
+                loading="lazy">
+            </figure>
+        
+            <article class="project-body">
+            <header class="project-header">
+                <h3 data-i18n="projects.easytagsy.title"></h3>
+                <span class="project-time" data-i18n="projects.easytagsy.time"></span>
+            </header>
+        
+            <p class="project-desc" data-i18n="projects.easytagsy.desc"></p>
+        
+            <div class="project-meta">
+                <div class="project-tech">
+                <strong data-i18n="projects.labels.tech"></strong>
+                <ul class="tech-badges">
+                    <li data-i18n="projects.easytagsy.tech.0"></li>
+                    <li data-i18n="projects.easytagsy.tech.1"></li>
+                    <li data-i18n="projects.easytagsy.tech.2"></li>
+                    <li data-i18n="projects.easytagsy.tech.3"></li>
+                    <li data-i18n="projects.easytagsy.tech.4"></li>
+                    <li data-i18n="projects.easytagsy.tech.5"></li>
+                    <li data-i18n="projects.easytagsy.tech.6"></li>
+                    <li data-i18n="projects.easytagsy.tech.7"></li>
                 </ul>
+                </div>
+        
+                <p class="cert-link">
+                <a href="https://easytagsy-ai.web.app/"
+                    target="_blank"
+                    data-i18n="projects.easytagsy.demo"></a>
+                </p>
+                <p class="cert-link">
+                <span data-i18n="projects.easytagsy.access"></span>
+                </p>
             </div>
-        </div>
-    </section>
+            </article>
+        </li>
+        
+        <!-- AI Trading Bots -->
+        <li class="project">
+            <figure class="project-media">
+            <img src="img/trade.jpg"
+                alt="Screenshot AI Trading Bots"
+                width="480" height="270"
+                loading="lazy">
+            </figure>
+        
+            <article class="project-body">
+            <header class="project-header">
+                <h3 data-i18n="projects.trading.title"></h3>
+                <span class="project-time" data-i18n="projects.trading.time"></span>
+            </header>
+        
+            <p class="project-desc" data-i18n="projects.trading.desc"></p>
+        
+            <div class="project-meta">
+                <div class="project-tech">
+                <strong data-i18n="projects.labels.tech"></strong>
+                <ul class="tech-badges">
+                    <li data-i18n="projects.trading.tech.0"></li>
+                    <li data-i18n="projects.trading.tech.1"></li>
+                    <li data-i18n="projects.trading.tech.2"></li>
+                    <li data-i18n="projects.trading.tech.3"></li>
+                    <li data-i18n="projects.trading.tech.4"></li>
+                </ul>
+                </div>
+            </div>
+            </article>
+        </li>
+  
+
+
+        </ul>
+      </section>
+      
 
     <div style="clear:both;"></div>
+
+    <section id="certificates" class="certificates">
+        <h2 data-i18n="certs.title"></h2>
+        <p class="cert-into" data-i18n="certs.intro"></p>
+      
+        <!-- Zertifikat: IBM HTML, CSS & JS -->
+        <details class="certificate-card">
+            <summary data-i18n="certs.ibm_html.title"></summary>
+          
+            <div class="certificate-content">
+              <div class="cert-meta" data-i18n="certs.ibm_html.meta"></div>
+          
+              <img src="cert/Coursera-HTML.png"
+                   data-i18n-attr="alt:certs.ibm_html.imgAlt" />
+          
+              <p data-i18n="certs.ibm_html.summary"></p>
+                        
+              <div class="cert-learn" data-i18n="certs.ibm_html.learn"></div>
+          
+              <p class="cert-note" data-i18n="certs.note"></p>
+            </div>
+          </details>
+
+          <!-- Zertifikat: IBM Intro SW Engineer -->
+          <details class="certificate-card">
+            <summary data-i18n="certs.ibm_software.title"></summary>
+          
+            <div class="certificate-content">
+              <div class="cert-meta" data-i18n="certs.ibm_software.meta"></div>
+          
+              <img src="cert/Coursera-SWEngin.png"
+                   data-i18n-attr="alt:certs.ibm_software.imgAlt" />
+          
+              <p data-i18n="certs.ibm_software.summary"></p>
+          
+              <div class="cert-learn" data-i18n="certs.ibm_software.learn"></div>
+            </div>
+          </details>
+          
+          <!-- Zertifikat: IBM Intro Cloud -->
+          <details class="certificate-card">
+            <summary data-i18n="certs.ibm_cloud.title"></summary>
+          
+            <div class="certificate-content">
+              <div class="cert-meta" data-i18n="certs.ibm_cloud.meta"></div>
+          
+              <img src="cert/Coursera-Cloud.png"
+                   data-i18n-attr="alt:certs.ibm_cloud.imgAlt" />
+          
+              <p data-i18n="certs.ibm_cloud.summary"></p>
+          
+              <div class="cert-learn" data-i18n="certs.ibm_cloud.learn"></div>
+            </div>
+          </details>
+          
+          <!-- Zertifikat: IBM Python Data science -->
+          <details class="certificate-card">
+            <summary data-i18n="certs.ibm_python.title"></summary>
+          
+            <div class="certificate-content">
+              <div class="cert-meta" data-i18n="certs.ibm_python.meta"></div>
+          
+              <img src="cert/Coursera-Phyton.png"
+                   data-i18n-attr="alt:certs.ibm_python.imgAlt" />
+          
+              <p data-i18n="certs.ibm_python.summary"></p>
+          
+              <div class="cert-learn" data-i18n="certs.ibm_python.learn"></div>
+            </div>
+          </details>
+          
+          <!-- Zertifikat: IBM React -->
+          <details class="certificate-card">
+            <summary data-i18n="certs.ibm_react.title"></summary>
+          
+            <div class="certificate-content">
+              <div class="cert-meta" data-i18n="certs.ibm_react.meta"></div>
+          
+              <img src="cert/Coursera-react.png"
+                   data-i18n-attr="alt:certs.ibm_react.imgAlt" />
+          
+              <p data-i18n="certs.ibm_react.summary"></p>
+          
+              <div class="cert-learn" data-i18n="certs.ibm_react.learn"></div>
+            </div>
+          </details>
+
+          <!-- Zertifikat: Udemy L2 NW -->
+          <details class="certificate-card">
+            <summary data-i18n="certs.udemy.layer2.title"></summary>
+          
+            <div class="certificate-content">
+              <div class="cert-meta" data-i18n="certs.udemy.layer2.meta"></div>
+          
+              <img src="cert/UC-NWbasis.png"
+                   data-i18n-attr="alt:certs.udemy.layer2.imgAlt" />
+          
+              <p data-i18n="certs.udemy.layer2.summary"></p>
+          
+              <div class="cert-learn" data-i18n="certs.udemy.layer2.learn"></div>
+            </div>
+          </details>
+
+          <!-- Zertifikat: Udemy subnet -->
+          <details class="certificate-card">
+            <summary data-i18n="certs.udemy.routing.title"></summary>
+          
+            <div class="certificate-content">
+              <div class="cert-meta" data-i18n="certs.udemy.routing.meta"></div>
+          
+              <img src="cert/UC-NWsubnetting.png"
+                   data-i18n-attr="alt:certs.udemy.routing.imgAlt" />
+          
+              <p data-i18n="certs.udemy.routing.summary"></p>
+          
+              <div class="cert-learn" data-i18n="certs.udemy.routing.learn"></div>
+            </div>
+          </details>
+
+          <!-- Zertifikat: Udemy Crypto -->
+          <details class="certificate-card">
+            <summary data-i18n="certs.udemy.blockchain.title"></summary>
+          
+            <div class="certificate-content">
+              <div class="cert-meta" data-i18n="certs.udemy.blockchain.meta"></div>
+          
+              <img src="cert/UC-block.jpg"
+                   data-i18n-attr="alt:certs.udemy.blockchain.imgAlt" />
+          
+              <p data-i18n="certs.udemy.blockchain.summary"></p>
+          
+              <div class="cert-learn" data-i18n="certs.udemy.blockchain.learn"></div>
+          
+              <p class="cert-link">
+                <a href="https://github.com/Nebettadjsr/BlockchainCrypto" target="_blank"
+                   data-i18n="certs.udemy.blockchain.github"></a>
+              </p>
+            </div>
+          </details>
+          
+          
+                    
+          <!-- Zertifikat: IBM Git -->
+          <details class="certificate-card">
+            <summary data-i18n="certs.ibm_git.title"></summary>
+          
+            <div class="certificate-content">
+              <div class="cert-meta" data-i18n="certs.ibm_git.meta"></div>
+          
+              <img src="cert/Coursera-Git.png"
+                   data-i18n-attr="alt:certs.ibm_git.imgAlt" />
+          
+              <p data-i18n="certs.ibm_git.summary"></p>
+          
+              <div class="cert-learn" data-i18n="certs.ibm_git.learn"></div>
+            </div>
+          </details>
+          
+          <!-- Zertifikat: Cousera AI Content -->
+          <details class="certificate-card">
+            <summary data-i18n="certs.cin_ai_content.title"></summary>
+          
+            <div class="certificate-content">
+              <div class="cert-meta" data-i18n="certs.cin_ai_content.meta"></div>
+          
+              <img src="cert/Coursera-AIcontent.png"
+                   data-i18n-attr="alt:certs.cin_ai_content.imgAlt" />
+          
+              <p data-i18n="certs.cin_ai_content.summary"></p>
+          
+              <div class="cert-learn" data-i18n="certs.cin_ai_content.learn"></div>
+            </div>
+          </details>
+          
+          <!-- Zertifikat: Cousera Midjurney -->
+          <details class="certificate-card">
+            <summary data-i18n="certs.midjourney.title"></summary>
+          
+            <div class="certificate-content">
+              <div class="cert-meta" data-i18n="certs.midjourney.meta"></div>
+          
+              <img src="cert/Coursera-Midj.png"
+                   data-i18n-attr="alt:certs.midjourney.imgAlt" />
+          
+              <p data-i18n="certs.midjourney.summary"></p>
+          
+              <div class="cert-learn" data-i18n="certs.midjourney.learn"></div>
+            </div>
+          </details>
+          
+
+      </section>
+      
 
     <!-- Recommendations -->
     <section id="recommendations">

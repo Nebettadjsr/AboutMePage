@@ -3,6 +3,8 @@
 *.user
 *.suo
 
+*.zip
+
 # Build/Temp
 bin/
 obj/
@@ -11,5 +13,5 @@ obj/
 Thumbs.db
 .DS_Store
 
-# Node (falls irgendwann nötig)
+# Node (falls irgendwann nï¿½tig)
 node_modules/

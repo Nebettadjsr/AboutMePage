@@ -8,7 +8,7 @@
     return new Promise((resolve, reject) => {
       // schon geladen?
       if (window.I18N && window.I18N[lang]) return resolve(window.I18N[lang]);
-      // dynamisch <script> einfügen
+      // dynamisch <script> einfï¿½gen
       const s = document.createElement("script");
       s.src = `i18n/${lang}.js`;
       s.onload = () => {
@@ -23,7 +23,7 @@
   function applyDict(dict) {
     document.querySelectorAll("[data-i18n]").forEach(el => {
       const key = el.getAttribute("data-i18n");
-      if (dict[key] != null) el.textContent = dict[key];
+      if (dict[key] != null) el.innerHTML = dict[key];
     });
     document.querySelectorAll("[data-i18n-attr]").forEach(el => {
       const spec = el.getAttribute("data-i18n-attr");
